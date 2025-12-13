@@ -1,0 +1,37 @@
+C:\Users\nguye\OneDrive\Máy tính\C#&Win\NhaKhoa\NhaKhoa\bin\Debug\NhaKhoa.exe.config
+C:\Users\nguye\OneDrive\Máy tính\C#&Win\NhaKhoa\NhaKhoa\bin\Debug\NhaKhoa.exe
+C:\Users\nguye\OneDrive\Máy tính\C#&Win\NhaKhoa\NhaKhoa\bin\Debug\NhaKhoa.pdb
+C:\Users\nguye\OneDrive\Máy tính\C#&Win\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.csproj.AssemblyReference.cache
+C:\Users\nguye\OneDrive\Máy tính\C#&Win\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.frmDatlich.resources
+C:\Users\nguye\OneDrive\Máy tính\C#&Win\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.frmMain.resources
+C:\Users\nguye\OneDrive\Máy tính\C#&Win\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.Properties.Resources.resources
+C:\Users\nguye\OneDrive\Máy tính\C#&Win\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.csproj.GenerateResource.cache
+C:\Users\nguye\OneDrive\Máy tính\C#&Win\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.csproj.CoreCompileInputs.cache
+C:\Users\nguye\OneDrive\Máy tính\C#&Win\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.exe
+C:\Users\nguye\OneDrive\Máy tính\C#&Win\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.pdb
+C:\Users\nguye\OneDrive\Máy tính\C#&Win\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.Login.resources
+C:\Users\nguye\OneDrive\Máy tính\C#&Win\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.FRM_DSBN.resources
+C:\Users\nguye\OneDrive\Máy tính\C#&Win\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.FRM_ThemBN.resources
+C:\Users\nguye\OneDrive\Máy tính\C#&Win\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.FRM_DSNV.resources
+C:\Users\nguye\OneDrive\Máy tính\C#&Win\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.FRM_ThemNV.resources
+C:\Users\nguye\OneDrive\Máy tính\C#&Win\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.UC_Menu.resources
+F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\bin\Debug\NhaKhoa.exe.config
+F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\bin\Debug\NhaKhoa.exe
+F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\bin\Debug\NhaKhoa.pdb
+F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.csproj.AssemblyReference.cache
+F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.frmDatlich.resources
+F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.FRM_DSBN.resources
+F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.frmMain.resources
+F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.Login.resources
+F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.FRM_ThemBN.resources
+F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.FRM_DSNV.resources
+F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.FRM_ThemNV.resources
+F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.FRM_PhieuKhamLS.resources
+F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.FRM_ChanDoan.resources
+F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.FRM_ThanhToan.resources
+F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.Properties.Resources.resources
+F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.UC_Menu.resources
+F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.csproj.GenerateResource.cache
+F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.csproj.CoreCompileInputs.cache
+F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.exe
+F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.pdb

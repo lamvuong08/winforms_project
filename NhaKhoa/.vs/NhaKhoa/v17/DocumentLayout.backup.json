@@ -1,0 +1,161 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\C#\u0026Win\\NhaKhoa\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{925D8365-67E0-48A3-975B-F03C26E89B85}|NhaKhoa\\NhaKhoa.csproj|c:\\users\\nguye\\onedrive\\m\u00E1y t\u00EDnh\\c#\u0026win\\nhakhoa\\nhakhoa\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{925D8365-67E0-48A3-975B-F03C26E89B85}|NhaKhoa\\NhaKhoa.csproj|solutionrelative:nhakhoa\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{925D8365-67E0-48A3-975B-F03C26E89B85}|NhaKhoa\\NhaKhoa.csproj|c:\\users\\nguye\\onedrive\\m\u00E1y t\u00EDnh\\c#\u0026win\\nhakhoa\\nhakhoa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{925D8365-67E0-48A3-975B-F03C26E89B85}|NhaKhoa\\NhaKhoa.csproj|solutionrelative:nhakhoa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{925D8365-67E0-48A3-975B-F03C26E89B85}|NhaKhoa\\NhaKhoa.csproj|c:\\users\\nguye\\onedrive\\m\u00E1y t\u00EDnh\\c#\u0026win\\nhakhoa\\nhakhoa\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{925D8365-67E0-48A3-975B-F03C26E89B85}|NhaKhoa\\NhaKhoa.csproj|solutionrelative:nhakhoa\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{925D8365-67E0-48A3-975B-F03C26E89B85}|NhaKhoa\\NhaKhoa.csproj|c:\\users\\nguye\\onedrive\\m\u00E1y t\u00EDnh\\c#\u0026win\\nhakhoa\\nhakhoa\\frm_main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{925D8365-67E0-48A3-975B-F03C26E89B85}|NhaKhoa\\NhaKhoa.csproj|solutionrelative:nhakhoa\\frm_main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{925D8365-67E0-48A3-975B-F03C26E89B85}|NhaKhoa\\NhaKhoa.csproj|c:\\users\\nguye\\onedrive\\m\u00E1y t\u00EDnh\\c#\u0026win\\nhakhoa\\nhakhoa\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{925D8365-67E0-48A3-975B-F03C26E89B85}|NhaKhoa\\NhaKhoa.csproj|solutionrelative:nhakhoa\\login.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{925D8365-67E0-48A3-975B-F03C26E89B85}|NhaKhoa\\NhaKhoa.csproj|C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\C#\u0026Win\\NhaKhoa\\nhakhoa\\frm_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{925D8365-67E0-48A3-975B-F03C26E89B85}|NhaKhoa\\NhaKhoa.csproj|solutionrelative:nhakhoa\\frm_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{925D8365-67E0-48A3-975B-F03C26E89B85}|NhaKhoa\\NhaKhoa.csproj|C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\C#\u0026Win\\NhaKhoa\\nhakhoa\\frm_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{925D8365-67E0-48A3-975B-F03C26E89B85}|NhaKhoa\\NhaKhoa.csproj|solutionrelative:nhakhoa\\frm_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{925D8365-67E0-48A3-975B-F03C26E89B85}|NhaKhoa\\NhaKhoa.csproj|c:\\users\\nguye\\onedrive\\m\u00E1y t\u00EDnh\\c#\u0026win\\nhakhoa\\nhakhoa\\frm_datlich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{925D8365-67E0-48A3-975B-F03C26E89B85}|NhaKhoa\\NhaKhoa.csproj|solutionrelative:nhakhoa\\frm_datlich.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FRM_Main.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\C#\u0026Win\\NhaKhoa\\NhaKhoa\\FRM_Main.Designer.cs",
+              "RelativeDocumentMoniker": "NhaKhoa\\FRM_Main.Designer.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\C#\u0026Win\\NhaKhoa\\NhaKhoa\\FRM_Main.Designer.cs",
+              "RelativeToolTip": "NhaKhoa\\FRM_Main.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T18:03:18.077Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\C#\u0026Win\\NhaKhoa\\NhaKhoa\\Login.cs",
+              "RelativeDocumentMoniker": "NhaKhoa\\Login.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\C#\u0026Win\\NhaKhoa\\NhaKhoa\\Login.cs",
+              "RelativeToolTip": "NhaKhoa\\Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T18:00:18.763Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\C#\u0026Win\\NhaKhoa\\NhaKhoa\\Program.cs",
+              "RelativeDocumentMoniker": "NhaKhoa\\Program.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\C#\u0026Win\\NhaKhoa\\NhaKhoa\\Program.cs",
+              "RelativeToolTip": "NhaKhoa\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T17:57:04.445Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\C#\u0026Win\\NhaKhoa\\NhaKhoa\\Login.cs",
+              "RelativeDocumentMoniker": "NhaKhoa\\Login.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\C#\u0026Win\\NhaKhoa\\NhaKhoa\\Login.cs [Design]",
+              "RelativeToolTip": "NhaKhoa\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T17:33:00.18Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Login.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\C#\u0026Win\\NhaKhoa\\NhaKhoa\\Login.Designer.cs",
+              "RelativeDocumentMoniker": "NhaKhoa\\Login.Designer.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\C#\u0026Win\\NhaKhoa\\NhaKhoa\\Login.Designer.cs",
+              "RelativeToolTip": "NhaKhoa\\Login.Designer.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAgwBUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-09T17:34:42.207Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "FRM_DatLich.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\C#\u0026Win\\NhaKhoa\\NhaKhoa\\FRM_DatLich.cs",
+              "RelativeDocumentMoniker": "NhaKhoa\\FRM_DatLich.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\C#\u0026Win\\NhaKhoa\\NhaKhoa\\FRM_DatLich.cs [Design]",
+              "RelativeToolTip": "NhaKhoa\\FRM_DatLich.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T15:47:02.514Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FRM_Main.cs",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\C#\u0026Win\\NhaKhoa\\NhaKhoa\\FRM_Main.cs",
+              "RelativeDocumentMoniker": "NhaKhoa\\FRM_Main.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\C#\u0026Win\\NhaKhoa\\NhaKhoa\\FRM_Main.cs",
+              "RelativeToolTip": "NhaKhoa\\FRM_Main.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA4AAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T15:36:50.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FRM_Main.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\C#\u0026Win\\NhaKhoa\\NhaKhoa\\FRM_Main.cs",
+              "RelativeDocumentMoniker": "NhaKhoa\\FRM_Main.cs",
+              "ToolTip": "C:\\Users\\nguye\\OneDrive\\M\u00E1y t\u00EDnh\\C#\u0026Win\\NhaKhoa\\NhaKhoa\\FRM_Main.cs [Design]",
+              "RelativeToolTip": "NhaKhoa\\FRM_Main.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T15:36:00.614Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
