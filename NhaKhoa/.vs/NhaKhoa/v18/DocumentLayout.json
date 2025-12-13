@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "F:\\Code_In_Here\\Winforms\\winforms_project\\NhaKhoa\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{925D8365-67E0-48A3-975B-F03C26E89B85}|NhaKhoa\\NhaKhoa.csproj|F:\\Code_In_Here\\Winforms\\winforms_project\\NhaKhoa\\nhakhoa\\uc_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{925D8365-67E0-48A3-975B-F03C26E89B85}|NhaKhoa\\NhaKhoa.csproj|solutionrelative:nhakhoa\\uc_menu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{925D8365-67E0-48A3-975B-F03C26E89B85}|NhaKhoa\\NhaKhoa.csproj|f:\\code_in_here\\winforms\\winforms_project\\nhakhoa\\nhakhoa\\form\\frm_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{925D8365-67E0-48A3-975B-F03C26E89B85}|NhaKhoa\\NhaKhoa.csproj|solutionrelative:nhakhoa\\form\\frm_main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{925D8365-67E0-48A3-975B-F03C26E89B85}|NhaKhoa\\NhaKhoa.csproj|F:\\Code_In_Here\\Winforms\\winforms_project\\NhaKhoa\\nhakhoa\\form\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{925D8365-67E0-48A3-975B-F03C26E89B85}|NhaKhoa\\NhaKhoa.csproj|solutionrelative:nhakhoa\\form\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{925D8365-67E0-48A3-975B-F03C26E89B85}|NhaKhoa\\NhaKhoa.csproj|F:\\Code_In_Here\\Winforms\\winforms_project\\NhaKhoa\\nhakhoa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{925D8365-67E0-48A3-975B-F03C26E89B85}|NhaKhoa\\NhaKhoa.csproj|solutionrelative:nhakhoa\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{925D8365-67E0-48A3-975B-F03C26E89B85}|NhaKhoa\\NhaKhoa.csproj|f:\\code_in_here\\winforms\\winforms_project\\nhakhoa\\nhakhoa\\form\\frm_main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{925D8365-67E0-48A3-975B-F03C26E89B85}|NhaKhoa\\NhaKhoa.csproj|solutionrelative:nhakhoa\\form\\frm_main.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 303,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,50 +34,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "F:\\Code_In_Here\\Winforms\\winforms_project\\NhaKhoa\\NhaKhoa\\Program.cs",
-              "RelativeDocumentMoniker": "NhaKhoa\\Program.cs",
-              "ToolTip": "F:\\Code_In_Here\\Winforms\\winforms_project\\NhaKhoa\\NhaKhoa\\Program.cs",
-              "RelativeToolTip": "NhaKhoa\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T07:17:14.482Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UC_Menu.cs [Design]",
-              "DocumentMoniker": "F:\\Code_In_Here\\Winforms\\winforms_project\\NhaKhoa\\NhaKhoa\\UC_Menu.cs",
-              "RelativeDocumentMoniker": "NhaKhoa\\UC_Menu.cs",
-              "ToolTip": "F:\\Code_In_Here\\Winforms\\winforms_project\\NhaKhoa\\NhaKhoa\\UC_Menu.cs [Design]",
-              "RelativeToolTip": "NhaKhoa\\UC_Menu.cs [Design]",
+              "Title": "FRM_Main.Designer.cs",
+              "DocumentMoniker": "F:\\Code_In_Here\\Winforms\\winforms_project\\NhaKhoa\\NhaKhoa\\Form\\FRM_Main.Designer.cs",
+              "RelativeDocumentMoniker": "NhaKhoa\\Form\\FRM_Main.Designer.cs",
+              "ToolTip": "F:\\Code_In_Here\\Winforms\\winforms_project\\NhaKhoa\\NhaKhoa\\Form\\FRM_Main.Designer.cs",
+              "RelativeToolTip": "NhaKhoa\\Form\\FRM_Main.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T07:16:58.166Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FRM_Main.cs [Design]",
-              "DocumentMoniker": "F:\\Code_In_Here\\Winforms\\winforms_project\\NhaKhoa\\NhaKhoa\\Form\\FRM_Main.cs",
-              "RelativeDocumentMoniker": "NhaKhoa\\Form\\FRM_Main.cs",
-              "ToolTip": "F:\\Code_In_Here\\Winforms\\winforms_project\\NhaKhoa\\NhaKhoa\\Form\\FRM_Main.cs [Design]",
-              "RelativeToolTip": "NhaKhoa\\Form\\FRM_Main.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T07:16:56.434Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "F:\\Code_In_Here\\Winforms\\winforms_project\\NhaKhoa\\NhaKhoa\\Form\\Login.cs",
-              "RelativeDocumentMoniker": "NhaKhoa\\Form\\Login.cs",
-              "ToolTip": "F:\\Code_In_Here\\Winforms\\winforms_project\\NhaKhoa\\NhaKhoa\\Form\\Login.cs [Design]",
-              "RelativeToolTip": "NhaKhoa\\Form\\Login.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-13T07:15:50.357Z"
+              "WhenOpened": "2025-12-13T08:40:54.635Z",
+              "EditorCaption": ""
             }
           ]
         },

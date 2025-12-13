@@ -35,3 +35,8 @@ F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.cspr
 F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.csproj.CoreCompileInputs.cache
 F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.exe
 F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.pdb
+F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.TaiKhoan.FRM_Account.resources
+F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.Thuoc.FRM_Thuoc.resources
+F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.Vatlieu.FRM_Vatlieu.resources
+F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.BenhNhan.FRM_Benhnhan.resources
+F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.NhanVien.FRM_Nhanvien.resources

@@ -1,9 +1,4 @@
-﻿using NhaKhoa.BenhNhan;
-using NhaKhoa.NhanVien;
-using NhaKhoa.TaiKhoan;
-using NhaKhoa.Thuoc;
-using NhaKhoa.Vatlieu;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using NhaKhoa.TaiKhoan;
 
 namespace NhaKhoa
 {
     public partial class frmMain : Form
     {
-        private Control currentContent = null;
+        private Form currentSubForm = null;
 
         public frmMain()
         {
@@ -28,25 +24,23 @@ namespace NhaKhoa
             this.Controls.Add(menu);
         }
 
-        //Mở form con bên trong panel
-        private void ShowContent(Form form)
+        //Mở form con với quản lý trạng thái
+        private void OpenSubForm(Form subForm)
         {
-            //Xóa nội dung cũ
-            if (currentContent != null)
+            //Nếu form cũ tồn tại, đóng nó
+            if (currentSubForm != null && !currentSubForm.IsDisposed)
             {
-                pnlContent.Controls.Remove(currentContent);
-                currentContent.Dispose();
+                currentSubForm.Close();
+                currentSubForm.Dispose();
             }
 
-            //Thiết lập form con như một control
-            form.TopLevel = false;
-            form.FormBorderStyle = FormBorderStyle.None;
-            form.Dock = DockStyle.Fill;
-            
-            pnlContent.Controls.Add(form);
-            form.Show();
-            
-            currentContent = form;
+            //Lưu form mới
+            currentSubForm = subForm;
+            currentSubForm.ShowDialog();
+
+            //Sau khi form đóng
+            currentSubForm.Dispose();
+            currentSubForm = null;
         }
 
         //Xử lý sự kiện menu
@@ -55,28 +49,28 @@ namespace NhaKhoa
             switch (e.MenuItem)
             {
                 case "Taikhoan":
-                    ShowContent(new FRM_Account());
+                    OpenSubForm(new FRM_Account());
                     break;
                 case "Benhnhan":
-                    ShowContent(new FRM_Benhnhan());
+                    //OpenSubForm(new frmBenhNhan());
                     break;
                 case "Nhanvien":
-                    ShowContent(new FRM_Nhanvien());
+                    //OpenSubForm(new frmNhanVien());
                     break;
                 case "Vatlieu":
-                    ShowContent(new FRM_Vatlieu());
+                    //OpenSubForm(new frmVatLieu());
                     break;
                 case "Thuoc":
-                    ShowContent(new FRM_Thuoc());
+                    //OpenSubForm(new frmThuoc());
                     break;
                 case "Hoadon":
-                    //ShowContent(new frmHoaDon());
+                    //OpenSubForm(new frmHoaDon());
                     break;
                 case "Doanhthu":
-                    //ShowContent(new frmDoanhThu());
+                    //OpenSubForm(new frmDoanhThu());
                     break;
                 case "Datlich":
-                    //ShowContent(new frmDatlich());
+                    OpenSubForm(new frmDatlich());
                     break;
             }
         }
@@ -84,7 +78,13 @@ namespace NhaKhoa
         //Form đặt lịch
         private void mnuDatlich_Click(object sender, EventArgs e)
         {
-            ShowContent(new frmDatlich());
+            OpenSubForm(new frmDatlich());
         }
+    }
+
+    //Custom EventArgs để truyền thông tin menu
+    public class MenuItemEventArgs : EventArgs
+    {
+        public string MenuItem { get; set; }
     }
 }

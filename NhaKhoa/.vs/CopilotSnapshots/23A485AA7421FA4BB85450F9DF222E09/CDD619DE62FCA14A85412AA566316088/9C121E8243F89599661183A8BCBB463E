@@ -1,9 +1,4 @@
-﻿using NhaKhoa.BenhNhan;
-using NhaKhoa.NhanVien;
-using NhaKhoa.TaiKhoan;
-using NhaKhoa.Thuoc;
-using NhaKhoa.Vatlieu;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using NhaKhoa.TaiKhoan;
 
 namespace NhaKhoa
 {
@@ -58,16 +54,16 @@ namespace NhaKhoa
                     ShowContent(new FRM_Account());
                     break;
                 case "Benhnhan":
-                    ShowContent(new FRM_Benhnhan());
+                    //ShowContent(new frmBenhNhan());
                     break;
                 case "Nhanvien":
-                    ShowContent(new FRM_Nhanvien());
+                    //ShowContent(new frmNhanVien());
                     break;
                 case "Vatlieu":
-                    ShowContent(new FRM_Vatlieu());
+                    //ShowContent(new frmVatLieu());
                     break;
                 case "Thuoc":
-                    ShowContent(new FRM_Thuoc());
+                    //ShowContent(new frmThuoc());
                     break;
                 case "Hoadon":
                     //ShowContent(new frmHoaDon());
