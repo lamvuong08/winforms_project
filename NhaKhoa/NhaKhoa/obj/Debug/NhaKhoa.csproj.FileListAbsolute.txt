@@ -40,3 +40,4 @@ F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.Thuo
 F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.Vatlieu.FRM_Vatlieu.resources
 F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.BenhNhan.FRM_Benhnhan.resources
 F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.NhanVien.FRM_Nhanvien.resources
+F:\Code_In_Here\Winforms\winforms_project\NhaKhoa\NhaKhoa\obj\Debug\NhaKhoa.Letan.FRM_Letan.resources

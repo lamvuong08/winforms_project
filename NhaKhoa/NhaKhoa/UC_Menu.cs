@@ -18,6 +18,30 @@ namespace NhaKhoa
         {
             InitializeComponent();
         }
+        public void SetRoleVisibility(string role)
+        {
+            btn_Benhnhan.Visible = false;
+            btn_Nhanvien.Visible = false;
+            btn_Vatlieu.Visible = false;
+            btn_Thuoc.Visible = false;
+            btn_Hoadon.Visible = false;
+            btn_Doanhthu.Visible = false;
+
+            if (role.ToLower() == "admin")
+            {
+                btn_Benhnhan.Visible = true;
+                btn_Nhanvien.Visible = true;
+                btn_Vatlieu.Visible = true;
+                btn_Thuoc.Visible = true;
+                btn_Hoadon.Visible = true;
+                btn_Doanhthu.Visible = true;
+            }
+            else if (role.ToLower() == "lễ tân")
+            {
+                btn_Benhnhan.Visible = true;
+                btn_Hoadon.Visible = true;
+            }
+        }
 
         private void btn_Taikhoan_Click(object sender, EventArgs e)
         {
@@ -55,7 +79,7 @@ namespace NhaKhoa
         }
     }
 
-    //Custom EventArgs để truyền thông tin menu
+
     public class MenuItemEventArgs : EventArgs
     {
         public string MenuItem { get; set; }

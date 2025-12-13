@@ -107,17 +107,53 @@
     <Compile Include="Form\FRM_ChanDoan.Designer.cs">
       <DependentUpon>FRM_ChanDoan.cs</DependentUpon>
     </Compile>
+    <Compile Include="FRM_Lamsan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRM_Lamsan.Designer.cs">
+      <DependentUpon>FRM_Lamsan.cs</DependentUpon>
+    </Compile>
     <Compile Include="FRM_ThanhToan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FRM_ThanhToan.Designer.cs">
       <DependentUpon>FRM_ThanhToan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Hoadon\FRM_AddHoadon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hoadon\FRM_AddHoadon.Designer.cs">
+      <DependentUpon>FRM_AddHoadon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hoadon\FRM_Hoadon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hoadon\FRM_Hoadon.Designer.cs">
+      <DependentUpon>FRM_Hoadon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Hoadon\FRM_Thanhtoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hoadon\FRM_Thanhtoan.Designer.cs">
+      <DependentUpon>FRM_Thanhtoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Letan\FRM_Letan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Letan\FRM_Letan.Designer.cs">
+      <DependentUpon>FRM_Letan.cs</DependentUpon>
+    </Compile>
     <Compile Include="NhanVien\FRM_Nhanvien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NhanVien\FRM_Nhanvien.Designer.cs">
       <DependentUpon>FRM_Nhanvien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NhaSi\FRM_Nhasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NhaSi\FRM_Nhasi.Designer.cs">
+      <DependentUpon>FRM_Nhasi.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -175,11 +211,29 @@
     <EmbeddedResource Include="Form\FRM_ChanDoan.resx">
       <DependentUpon>FRM_ChanDoan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FRM_Lamsan.resx">
+      <DependentUpon>FRM_Lamsan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRM_ThanhToan.resx">
       <DependentUpon>FRM_ThanhToan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Hoadon\FRM_AddHoadon.resx">
+      <DependentUpon>FRM_AddHoadon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hoadon\FRM_Hoadon.resx">
+      <DependentUpon>FRM_Hoadon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hoadon\FRM_Thanhtoan.resx">
+      <DependentUpon>FRM_Thanhtoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Letan\FRM_Letan.resx">
+      <DependentUpon>FRM_Letan.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="NhanVien\FRM_Nhanvien.resx">
       <DependentUpon>FRM_Nhanvien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NhaSi\FRM_Nhasi.resx">
+      <DependentUpon>FRM_Nhasi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -233,7 +287,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Doanhthu\" />
-    <Folder Include="Hoadon\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
