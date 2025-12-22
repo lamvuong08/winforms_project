@@ -1,0 +1,32 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+.sln.docstates
+
+# Build Folders
+[Bb]in/
+[Oo]bj/
+
+# Debug
+*.pdb
+*.mdb
+
+# IntelliCode / Copilot Index
+FileContentIndex/
+CopilotSnapshots/
+CopilotIndices/
+
+# Cache
+*.cache
+*.vsidx
+*.mpack
+*.db
+*.db-shm
+*.db-wal
+
+# Windows
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
