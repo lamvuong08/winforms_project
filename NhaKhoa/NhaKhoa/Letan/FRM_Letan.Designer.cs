@@ -49,11 +49,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.dgvDSBN = new System.Windows.Forms.DataGridView();
-            this.btnTimKiem_LT = new System.Windows.Forms.Button();
-            this.btnThemHD_LT = new System.Windows.Forms.Button();
-            this.btnThemChiTietHD_LT = new System.Windows.Forms.Button();
-            this.btnThemLich_LT = new System.Windows.Forms.Button();
-            this.btnNhapLai_LT = new System.Windows.Forms.Button();
             this.MaBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenBN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GioiTinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -62,6 +57,11 @@
             this.DiaChi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NgayTao = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnTimKiem_LT = new System.Windows.Forms.Button();
+            this.btnThemHD_LT = new System.Windows.Forms.Button();
+            this.btnThemChiTietHD_LT = new System.Windows.Forms.Button();
+            this.btnThemLich_LT = new System.Windows.Forms.Button();
+            this.btnNhapLai_LT = new System.Windows.Forms.Button();
             this.btn.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDSBN)).BeginInit();
             this.SuspendLayout();
@@ -300,6 +300,54 @@
             this.dgvDSBN.Size = new System.Drawing.Size(1601, 506);
             this.dgvDSBN.TabIndex = 9;
             // 
+            // MaBN
+            // 
+            this.MaBN.HeaderText = "Mã bệnh nhân";
+            this.MaBN.MinimumWidth = 6;
+            this.MaBN.Name = "MaBN";
+            // 
+            // TenBN
+            // 
+            this.TenBN.HeaderText = "Tên bệnh nhân";
+            this.TenBN.MinimumWidth = 6;
+            this.TenBN.Name = "TenBN";
+            // 
+            // GioiTinh
+            // 
+            this.GioiTinh.HeaderText = "Giới tính";
+            this.GioiTinh.MinimumWidth = 6;
+            this.GioiTinh.Name = "GioiTinh";
+            // 
+            // NamSinh
+            // 
+            this.NamSinh.HeaderText = "Ngày sinh";
+            this.NamSinh.MinimumWidth = 6;
+            this.NamSinh.Name = "NamSinh";
+            // 
+            // SDT
+            // 
+            this.SDT.HeaderText = "SĐT";
+            this.SDT.MinimumWidth = 6;
+            this.SDT.Name = "SDT";
+            // 
+            // DiaChi
+            // 
+            this.DiaChi.HeaderText = "Địa chỉ";
+            this.DiaChi.MinimumWidth = 6;
+            this.DiaChi.Name = "DiaChi";
+            // 
+            // NgayTao
+            // 
+            this.NgayTao.HeaderText = "Ngày khám";
+            this.NgayTao.MinimumWidth = 6;
+            this.NgayTao.Name = "NgayTao";
+            // 
+            // GhiChu
+            // 
+            this.GhiChu.HeaderText = "Ghi chú";
+            this.GhiChu.MinimumWidth = 6;
+            this.GhiChu.Name = "GhiChu";
+            // 
             // btnTimKiem_LT
             // 
             this.btnTimKiem_LT.Location = new System.Drawing.Point(313, 565);
@@ -353,54 +401,7 @@
             this.btnNhapLai_LT.TabIndex = 14;
             this.btnNhapLai_LT.Text = "Nhập lại";
             this.btnNhapLai_LT.UseVisualStyleBackColor = true;
-            // 
-            // MaBN
-            // 
-            this.MaBN.HeaderText = "Mã bệnh nhân";
-            this.MaBN.MinimumWidth = 6;
-            this.MaBN.Name = "MaBN";
-            // 
-            // TenBN
-            // 
-            this.TenBN.HeaderText = "Tên bệnh nhân";
-            this.TenBN.MinimumWidth = 6;
-            this.TenBN.Name = "TenBN";
-            // 
-            // GioiTinh
-            // 
-            this.GioiTinh.HeaderText = "Giới tính";
-            this.GioiTinh.MinimumWidth = 6;
-            this.GioiTinh.Name = "GioiTinh";
-            // 
-            // NamSinh
-            // 
-            this.NamSinh.HeaderText = "Ngày sinh";
-            this.NamSinh.MinimumWidth = 6;
-            this.NamSinh.Name = "NamSinh";
-            // 
-            // SDT
-            // 
-            this.SDT.HeaderText = "SĐT";
-            this.SDT.MinimumWidth = 6;
-            this.SDT.Name = "SDT";
-            // 
-            // DiaChi
-            // 
-            this.DiaChi.HeaderText = "Địa chỉ";
-            this.DiaChi.MinimumWidth = 6;
-            this.DiaChi.Name = "DiaChi";
-            // 
-            // NgayTao
-            // 
-            this.NgayTao.HeaderText = "Ngày khám";
-            this.NgayTao.MinimumWidth = 6;
-            this.NgayTao.Name = "NgayTao";
-            // 
-            // GhiChu
-            // 
-            this.GhiChu.HeaderText = "Ghi chú";
-            this.GhiChu.MinimumWidth = 6;
-            this.GhiChu.Name = "GhiChu";
+            this.btnNhapLai_LT.Click += new System.EventHandler(this.btnNhapLai_LT_Click);
             // 
             // FRM_Letan
             // 

@@ -117,11 +117,11 @@ namespace NhaKhoa.Letan
             string gioiTinh = rboNam_LT.Checked ? "Nam" : "Nữ"; // Giả định bạn dùng RadioButton
             string sdt = txtSDT_LT.Text.Trim();
             string diaChi = txtDiaChi_LT.Text.Trim();
-            /*FRM_AddHoadon frmAddHoadon = new FRM_AddHoadon(maBN, tenBN, ngaySinh, gioiTinh, sdt, diaChi);
-            *frmAddHoadon.ShowDialog();
-            *tao instance cua form hoa don va truyen du lieu benh nhan vao
-            *hien thi form hoa don
-            */
+            FRM_AddHoadon frmAddHoadon = new FRM_AddHoadon(maBN, tenBN, ngaySinh, gioiTinh, sdt, diaChi);
+            frmAddHoadon.ShowDialog();
+            //Tao instance cua form hoa don va truyen du lieu benh nhan vao
+            //hien thi form hoa don
+           
         }
 
         private void btnThemChiTietHD_LT_Click(object sender, EventArgs e)
@@ -153,6 +153,17 @@ namespace NhaKhoa.Letan
             // Thông báo thành công
             MessageBox.Show("Lịch hẹn đã được thêm thành công.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+        }
+
+        private void btnNhapLai_LT_Click(object sender, EventArgs e)
+        {
+            txtDiaChi_LT.Text = null;
+            txtMaBN_LT.Text = null;
+            txtSDT_LT.Text = null;
+            txtTenBenhNhan_LT.Text = null;
+            rtb_LyDoKham_LT.Text= null;
+            dtp_NgaySinh_LT.Value = DateTime.Now;
+            dtpNgayKham_LT.Value= DateTime.Now;
         }
     }
 }
