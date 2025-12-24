@@ -23,38 +23,31 @@ namespace NhaKhoa.DAL
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            // Định nghĩa composite key cho UserRoles (UserId + RoleId)
+            base.OnModelCreating(modelBuilder);
+
+            // Cấu hình composite key cho UserRoles
             modelBuilder.Entity<Models.UserRoles>()
                 .HasKey(ur => new { ur.UserId, ur.RoleId });
 
-            // Cấu hình relationship giữa Users và UserRoles
+            // Cấu hình foreign key relationships
             modelBuilder.Entity<Models.UserRoles>()
                 .HasRequired(ur => ur.User)
                 .WithMany(u => u.UserRoles)
-                .HasForeignKey(ur => ur.UserId);
+                .HasForeignKey(ur => ur.UserId)
+                .WillCascadeOnDelete(false);
 
-            // Cấu hình relationship giữa Roles và UserRoles
             modelBuilder.Entity<Models.UserRoles>()
                 .HasRequired(ur => ur.Role)
                 .WithMany(r => r.UserRoles)
-                .HasForeignKey(ur => ur.RoleId);
+                .HasForeignKey(ur => ur.RoleId)
+                .WillCascadeOnDelete(false);
 
-            // Cấu hình decimal với precision và scale cho Thuoc
-            modelBuilder.Entity<Models.Thuoc>()
-                .Property(t => t.DonGia)
-                .HasPrecision(18, 2);
-
-            // Cấu hình decimal với precision và scale cho HoaDon
-            modelBuilder.Entity<Models.HoaDon>()
-                .Property(h => h.TongTien)
-                .HasPrecision(18, 2);
-
-            // Cấu hình decimal với precision và scale cho VatLieu
-            modelBuilder.Entity<Models.VatLieu>()
-                .Property(v => v.DonGia)
-                .HasPrecision(18, 2);
-
-            base.OnModelCreating(modelBuilder);
+            // Cấu hình mapping cho BenhNhan - đảm bảo TrangThai được map đúng
+            modelBuilder.Entity<Models.BenhNhan>()
+                .Property(b => b.TrangThai)
+                .HasColumnName("TrangThai")
+                .HasMaxLength(50)
+                .IsOptional();
         }
     }
 }

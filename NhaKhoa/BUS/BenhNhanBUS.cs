@@ -80,5 +80,21 @@ namespace NhaKhoa.BUS
 
             _dal.Delete(maBN);
         }
+
+        public void CapNhatTrangThai(string maBN, string trangThai)
+        {
+            if (string.IsNullOrWhiteSpace(maBN))
+                throw new ArgumentException("Mã bệnh nhân không được để trống");
+
+            if (string.IsNullOrWhiteSpace(trangThai))
+                throw new ArgumentException("Trạng thái không được để trống");
+
+            var existing = _dal.GetById(maBN);
+            if (existing == null)
+                throw new ArgumentException($"Không tìm thấy bệnh nhân với mã {maBN}");
+
+            existing.TrangThai = trangThai;
+            _dal.Update(existing);
+        }
     }
 }

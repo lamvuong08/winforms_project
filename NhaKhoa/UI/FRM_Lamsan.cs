@@ -133,6 +133,7 @@ namespace NhaKhoa
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
+            // Không tự động cập nhật trạng thái - để FRM_Nhasi xử lý
             this.Close();
         }
 

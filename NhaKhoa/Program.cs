@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using OfficeOpenXml;
 
 namespace NhaKhoa
 {
@@ -14,6 +15,9 @@ namespace NhaKhoa
         [STAThread]
         static void Main()
         {
+            // Set license cho EPPlus 8+ (chỉ set một lần khi khởi động ứng dụng)
+            ExcelPackage.License.SetNonCommercialPersonal("NhaKhoa");
+            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 

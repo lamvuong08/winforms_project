@@ -21,5 +21,9 @@ namespace NhaKhoa.Models
         public string DiaChi { get; set; }
         public DateTime NgayKham { get; set; }
         public string LyDoKham { get; set; }
+        
+        [Column("TrangThai")]
+        [StringLength(50)]
+        public string TrangThai { get; set; }
     }
 }

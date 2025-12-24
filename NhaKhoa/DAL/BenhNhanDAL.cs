@@ -46,11 +46,50 @@ namespace NhaKhoa.DAL
         {
             using (var ctx = new NhaKhoaContext())
             {
-                // Giả sử có cột TrangThai trong DB, nếu không có thì bỏ hàm này
-                return ctx.BenhNhans
-                          .Where(x => x.LyDoKham.Contains(trangThai)) // Tạm thời dùng LyDoKham, bạn có thể thêm property TrangThai vào Model
-                          .OrderBy(x => x.NgayKham)
-                          .ToList();
+                // Thử cách 1: Query thông thường
+                try
+                {
+                    var query = ctx.BenhNhans.AsQueryable();
+                    
+                    if (string.IsNullOrEmpty(trangThai))
+                    {
+                        // Nếu trangThai là null hoặc empty, lấy các record có TrangThai là null hoặc empty
+                        query = query.Where(x => x.TrangThai == null || x.TrangThai == "" || x.TrangThai == trangThai);
+                    }
+                    else
+                    {
+                        // So sánh chính xác, không phân biệt hoa thường
+                        query = query.Where(x => x.TrangThai != null && x.TrangThai.Trim() == trangThai.Trim());
+                    }
+                    
+                    var result = query.OrderBy(x => x.NgayKham).ToList();
+                    
+                    // Debug
+                    System.Diagnostics.Debug.WriteLine($"GetByTrangThai('{trangThai}') - Số kết quả: {result.Count}");
+                    if (result.Count > 0)
+                    {
+                        System.Diagnostics.Debug.WriteLine($"Ví dụ TrangThai: '{result.First().TrangThai ?? "NULL"}'");
+                    }
+                    
+                    return result;
+                }
+                catch (Exception ex)
+                {
+                    // Nếu có lỗi, thử load tất cả rồi filter trong memory
+                    System.Diagnostics.Debug.WriteLine($"Lỗi query TrangThai: {ex.Message}");
+                    var all = ctx.BenhNhans.ToList();
+                    System.Diagnostics.Debug.WriteLine($"Tổng số bệnh nhân: {all.Count}");
+                    
+                    if (string.IsNullOrEmpty(trangThai))
+                    {
+                        return all.Where(x => x.TrangThai == null || x.TrangThai == "").OrderBy(x => x.NgayKham).ToList();
+                    }
+                    else
+                    {
+                        return all.Where(x => x.TrangThai != null && x.TrangThai.Trim().Equals(trangThai.Trim(), StringComparison.OrdinalIgnoreCase))
+                                  .OrderBy(x => x.NgayKham).ToList();
+                    }
+                }
             }
         }
 
