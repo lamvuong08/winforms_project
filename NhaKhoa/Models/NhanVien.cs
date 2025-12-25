@@ -31,6 +31,12 @@ namespace NhaKhoa.Models
         [Column(TypeName = "date")]
         public DateTime NgayVaoLam { get; set; }
 
-        public int UserId { get; set; }
+        public int? UserId { get; set; }
+
+        [StringLength(10)]
+        public string GioiTinh { get; set; }
+
+        [StringLength(255)]
+        public string DiaChi { get; set; }
     }
 }

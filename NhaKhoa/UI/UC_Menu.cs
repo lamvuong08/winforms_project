@@ -30,6 +30,7 @@ namespace NhaKhoa
             btn_Hoadon.Visible = false;
             btn_Doanhthu.Visible = false;
             btn_phieukhambenh.Visible = false;
+            btn_Dichvu.Visible = false;
             btn_ds.Visible = false;
 
             switch (role.ToLower())
@@ -42,6 +43,7 @@ namespace NhaKhoa
                     btn_Thuoc.Visible = true;
                     btn_Hoadon.Visible = true;
                     btn_Doanhthu.Visible = true;
+                    btn_Dichvu.Visible = true;
                     break;
                 case "doctor":
                     btn_ds.Visible = true;
@@ -112,6 +114,11 @@ namespace NhaKhoa
         private void btn_ds_Click(object sender, EventArgs e)
         {
             MenuItemClicked?.Invoke(this, new MenuItemEventArgs { MenuItem = "DanhSachChoKham" });
+        }
+
+        private void btn_Dichvu_Click(object sender, EventArgs e)
+        {
+            MenuItemClicked?.Invoke(this, new MenuItemEventArgs { MenuItem = "Dichvu" });
         }
     }
 

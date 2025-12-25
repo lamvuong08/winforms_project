@@ -19,7 +19,9 @@ namespace NhaKhoa.DAL
         public DbSet<Models.Users> Users { get; set; }
         public DbSet<Models.Roles> Roles { get; set; }
         public DbSet<Models.UserRoles> UserRoles { get; set; }
-        public DbSet<Models.ChuanDoan> ChuanDoans { get; set; }
+        public DbSet<Models.ChanDoan> ChanDoans { get; set; }
+        public DbSet<Models.DieuTri> DieuTris { get; set; }
+        public DbSet<Models.LamSan> LamSans { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -42,12 +44,41 @@ namespace NhaKhoa.DAL
                 .HasForeignKey(ur => ur.RoleId)
                 .WillCascadeOnDelete(false);
 
-            // Cấu hình mapping cho BenhNhan - đảm bảo TrangThai được map đúng
-            modelBuilder.Entity<Models.BenhNhan>()
-                .Property(b => b.TrangThai)
-                .HasColumnName("TrangThai")
-                .HasMaxLength(50)
-                .IsOptional();
+            // Cấu hình ChanDoan - chỉ có MaCD, MaLS (NOT NULL), TenChuanDoan
+            var chanDoanConfig = modelBuilder.Entity<Models.ChanDoan>();
+            
+            // MaLS là NOT NULL trong database (Foreign Key bắt buộc)
+            chanDoanConfig.Property(c => c.MaLS).IsRequired();
+
+            // Cấu hình foreign key relationship với LamSan (required)
+            chanDoanConfig.HasRequired(c => c.Lamsan)
+                .WithMany(l => l.Chandoans)
+                .HasForeignKey(c => c.MaLS)
+                .WillCascadeOnDelete(false);
+
+            // Cấu hình DieuTri
+            var dieuTriConfig = modelBuilder.Entity<Models.DieuTri>();
+            
+            // Các foreign keys là optional
+            dieuTriConfig.Property(d => d.MaLS).IsOptional();
+            dieuTriConfig.Property(d => d.MaCD).IsOptional();
+            dieuTriConfig.Property(d => d.TenDieuTri).IsOptional();
+            dieuTriConfig.Property(d => d.DonViTinh).IsOptional();
+            dieuTriConfig.Property(d => d.DonGia).IsOptional();
+
+            // Không config foreign key relationships nếu database không có constraints
+            // Hoặc nếu cần thì bỏ comment các dòng dưới
+            /*
+            dieuTriConfig.HasOptional(d => d.Lamsan)
+                .WithMany(l => l.Dieutris)
+                .HasForeignKey(d => d.MaLS)
+                .WillCascadeOnDelete(false);
+
+            dieuTriConfig.HasOptional(d => d.Chandoan)
+                .WithMany(c => c.Dieutris)
+                .HasForeignKey(d => d.MaCD)
+                .WillCascadeOnDelete(false);
+            */
         }
     }
 }

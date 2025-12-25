@@ -64,6 +64,11 @@ namespace NhaKhoa.NhanVien
 
                 txtSDT.Text = dataRow["SDT"]?.ToString() ?? "";
                 txtEmail.Text = dataRow["Email"]?.ToString() ?? "";
+                txtDiaChi.Text = dataRow["DiaChi"]?.ToString() ?? "";
+                
+                string gioiTinh = dataRow["GioiTinh"]?.ToString() ?? "Nam";
+                rbtnNam.Checked = (gioiTinh == "Nam");
+                rbtnNu.Checked = (gioiTinh == "Nữ");
             }
             else
             {
@@ -129,6 +134,26 @@ namespace NhaKhoa.NhanVien
                         break;
                     }
                 }
+
+                foreach (DataGridViewColumn col in dgvDSNV.Columns)
+                {
+                    if (col.DataPropertyName == "DiaChi" && row.Cells[col.Name] != null)
+                    {
+                        txtDiaChi.Text = row.Cells[col.Name].Value?.ToString() ?? "";
+                        break;
+                    }
+                }
+
+                foreach (DataGridViewColumn col in dgvDSNV.Columns)
+                {
+                    if (col.DataPropertyName == "GioiTinh" && row.Cells[col.Name] != null)
+                    {
+                        string gioiTinh = row.Cells[col.Name].Value?.ToString() ?? "Nam";
+                        rbtnNam.Checked = (gioiTinh == "Nam");
+                        rbtnNu.Checked = (gioiTinh == "Nữ");
+                        break;
+                    }
+                }
             }
 
             currentMaNV = txtMaNV.Text;
@@ -141,6 +166,9 @@ namespace NhaKhoa.NhanVien
             dtpNgayVaoLam.Value = DateTime.Today;
             txtSDT.Clear();
             txtEmail.Clear();
+            txtDiaChi.Clear();
+            rbtnNam.Checked = true;
+            rbtnNu.Checked = false;
             currentMaNV = "";
         }
         private DataTable ConvertToDataTable(List<Models.NhanVien> list)
@@ -174,9 +202,9 @@ namespace NhaKhoa.NhanVien
                     nv.SDT ?? "",
                     nv.Email ?? "",
                     nv.MaCV ?? "",
-                    "", // GioiTinh - không có trong model
+                    nv.GioiTinh ?? "", // GioiTinh từ model
                     0,  // NamSinh - không có trong model
-                    ""  // DiaChi - không có trong model
+                    nv.DiaChi ?? ""  // DiaChi từ model
                 );
             }
 
@@ -277,6 +305,8 @@ namespace NhaKhoa.NhanVien
                 string maCV = cboChucVu.SelectedValue?.ToString() ?? "";
                 string sdt = txtSDT.Text.Trim();
                 string email = txtEmail.Text.Trim();
+                string diaChi = txtDiaChi.Text.Trim();
+                string gioiTinh = rbtnNam.Checked ? "Nam" : "Nữ";
 
                 var nhanVien = new Models.NhanVien
                 {
@@ -285,7 +315,9 @@ namespace NhaKhoa.NhanVien
                     NgayVaoLam = ngayVaoLam,
                     MaCV = string.IsNullOrEmpty(maCV) ? null : maCV,
                     SDT = string.IsNullOrEmpty(sdt) ? null : sdt,
-                    Email = string.IsNullOrEmpty(email) ? null : email
+                    Email = string.IsNullOrEmpty(email) ? null : email,
+                    DiaChi = string.IsNullOrEmpty(diaChi) ? null : diaChi,
+                    GioiTinh = gioiTinh
                 };
 
                 _nhanVienBus.CapNhatNhanVien(nhanVien);
@@ -314,6 +346,8 @@ namespace NhaKhoa.NhanVien
                 string maCV = cboChucVu.SelectedValue?.ToString() ?? "";
                 string sdt = txtSDT.Text.Trim();
                 string email = txtEmail.Text.Trim();
+                string diaChi = txtDiaChi.Text.Trim();
+                string gioiTinh = rbtnNam.Checked ? "Nam" : "Nữ";
 
                 var nhanVien = new Models.NhanVien
                 {
@@ -322,7 +356,9 @@ namespace NhaKhoa.NhanVien
                     NgayVaoLam = ngayVaoLam,
                     MaCV = string.IsNullOrEmpty(maCV) ? null : maCV,
                     SDT = string.IsNullOrEmpty(sdt) ? null : sdt,
-                    Email = string.IsNullOrEmpty(email) ? null : email
+                    Email = string.IsNullOrEmpty(email) ? null : email,
+                    DiaChi = string.IsNullOrEmpty(diaChi) ? null : diaChi,
+                    GioiTinh = gioiTinh
                 };
 
                 _nhanVienBus.ThemNhanVien(nhanVien);

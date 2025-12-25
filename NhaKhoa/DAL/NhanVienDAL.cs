@@ -29,11 +29,17 @@ namespace NhaKhoa.DAL
             {
                 var query = ctx.NhanViens.AsQueryable();
 
-                if (!string.IsNullOrWhiteSpace(ma))
-                    query = query.Where(x => x.MaNV.Contains(ma));
+                // Nếu có keyword, tìm kiếm theo OR logic (mã HOẶC tên chứa keyword)
+                bool hasMa = !string.IsNullOrWhiteSpace(ma);
+                bool hasTen = !string.IsNullOrWhiteSpace(ten);
 
-                if (!string.IsNullOrWhiteSpace(ten))
-                    query = query.Where(x => x.TenNV.Contains(ten));
+                if (hasMa || hasTen)
+                {
+                    query = query.Where(x =>
+                        (hasMa && x.MaNV != null && x.MaNV.Contains(ma)) ||
+                        (hasTen && x.TenNV != null && x.TenNV.Contains(ten))
+                    );
+                }
 
                 return query.ToList();
             }

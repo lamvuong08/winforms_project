@@ -29,14 +29,19 @@ namespace NhaKhoa.DAL
             {
                 var query = ctx.BenhNhans.AsQueryable();
 
-                if (!string.IsNullOrWhiteSpace(ma))
-                    query = query.Where(x => x.MaBN.Contains(ma));
+                // Nếu có keyword, tìm kiếm theo OR logic (mã HOẶC tên HOẶC SDT chứa keyword)
+                bool hasMa = !string.IsNullOrWhiteSpace(ma);
+                bool hasTen = !string.IsNullOrWhiteSpace(ten);
+                bool hasSdt = !string.IsNullOrWhiteSpace(sdt);
 
-                if (!string.IsNullOrWhiteSpace(ten))
-                    query = query.Where(x => x.TenBN.Contains(ten));
-
-                if (!string.IsNullOrWhiteSpace(sdt))
-                    query = query.Where(x => x.SDT.Contains(sdt));
+                if (hasMa || hasTen || hasSdt)
+                {
+                    query = query.Where(x =>
+                        (hasMa && x.MaBN != null && x.MaBN.Contains(ma)) ||
+                        (hasTen && x.TenBN != null && x.TenBN.Contains(ten)) ||
+                        (hasSdt && x.SDT != null && x.SDT.Contains(sdt))
+                    );
+                }
 
                 return query.ToList();
             }

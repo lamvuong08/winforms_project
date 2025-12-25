@@ -7,36 +7,32 @@ namespace NhaKhoa.DAL
 {
     public class ChuanDoanDAL
     {
-        public List<Models.ChuanDoan> GetAll()
+        public List<Models.ChanDoan> GetAll()
         {
             using (var ctx = new NhaKhoaContext())
             {
-                return ctx.ChuanDoans
-                          .Include(x => x.BenhNhan)
-                          .Include(x => x.NhanVien)
+                // Không include navigation properties để tránh lỗi nếu FK chưa được config
+                return ctx.ChanDoans.ToList();
+            }
+        }
+
+        public List<Models.ChanDoan> GetByMaBN(string maBN)
+        {
+            using (var ctx = new NhaKhoaContext())
+            {
+                // Lấy qua LamSan vì ChanDoan không có MaBN trực tiếp
+                return ctx.ChanDoans
+                          .Where(x => x.MaLS != null && ctx.LamSans.Any(l => l.MaLS == x.MaLS && l.MaBN == maBN))
                           .ToList();
             }
         }
 
-        public List<Models.ChuanDoan> GetByMaBN(string maBN)
+        public Models.ChanDoan GetById(string maCD)
         {
             using (var ctx = new NhaKhoaContext())
             {
-                return ctx.ChuanDoans
-                          .Where(x => x.MaBN == maBN)
-                          .OrderByDescending(x => x.NgayChuanDoan)
-                          .ToList();
-            }
-        }
-
-        public Models.ChuanDoan GetById(string maCD)
-        {
-            using (var ctx = new NhaKhoaContext())
-            {
-                return ctx.ChuanDoans
-                          .Include(x => x.BenhNhan)
-                          .Include(x => x.NhanVien)
-                          .SingleOrDefault(x => x.MaCD == maCD);
+                // Không include navigation properties để tránh lỗi
+                return ctx.ChanDoans.SingleOrDefault(x => x.MaCD == maCD);
             }
         }
 
@@ -44,8 +40,8 @@ namespace NhaKhoa.DAL
         {
             using (var ctx = new NhaKhoaContext())
             {
-                var last = ctx.ChuanDoans
-                              .Where(x => x.MaCD.StartsWith("CD"))
+                var last = ctx.ChanDoans
+                              .Where(x => x.MaCD != null && x.MaCD.StartsWith("CD"))
                               .ToList();
 
                 if (!last.Any()) return "CD001";
@@ -62,16 +58,16 @@ namespace NhaKhoa.DAL
             }
         }
 
-        public void Insert(Models.ChuanDoan cd)
+        public void Insert(Models.ChanDoan cd)
         {
             using (var ctx = new NhaKhoaContext())
             {
-                ctx.ChuanDoans.Add(cd);
+                ctx.ChanDoans.Add(cd);
                 ctx.SaveChanges();
             }
         }
 
-        public void Update(Models.ChuanDoan cd)
+        public void Update(Models.ChanDoan cd)
         {
             using (var ctx = new NhaKhoaContext())
             {
@@ -84,10 +80,10 @@ namespace NhaKhoa.DAL
         {
             using (var ctx = new NhaKhoaContext())
             {
-                var entity = ctx.ChuanDoans.SingleOrDefault(x => x.MaCD == maCD);
+                var entity = ctx.ChanDoans.SingleOrDefault(x => x.MaCD == maCD);
                 if (entity == null) return;
 
-                ctx.ChuanDoans.Remove(entity);
+                ctx.ChanDoans.Remove(entity);
                 ctx.SaveChanges();
             }
         }

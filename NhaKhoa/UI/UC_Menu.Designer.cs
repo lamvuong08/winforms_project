@@ -40,6 +40,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_Taikhoan = new System.Windows.Forms.Button();
             this.btn_dschokham = new System.Windows.Forms.FlowLayoutPanel();
+            this.btn_Dichvu = new System.Windows.Forms.Button();
             this.btn_ds = new System.Windows.Forms.Button();
             this.btn_Dangxuat = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
@@ -54,7 +55,7 @@
             this.btn_Benhnhan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Benhnhan.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Benhnhan.Location = new System.Drawing.Point(2, 115);
-            this.btn_Benhnhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Benhnhan.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Benhnhan.Name = "btn_Benhnhan";
             this.btn_Benhnhan.Size = new System.Drawing.Size(178, 49);
             this.btn_Benhnhan.TabIndex = 1;
@@ -69,7 +70,7 @@
             this.btn_Nhanvien.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Nhanvien.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Nhanvien.Location = new System.Drawing.Point(2, 168);
-            this.btn_Nhanvien.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Nhanvien.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Nhanvien.Name = "btn_Nhanvien";
             this.btn_Nhanvien.Size = new System.Drawing.Size(178, 49);
             this.btn_Nhanvien.TabIndex = 2;
@@ -84,7 +85,7 @@
             this.btn_Vatlieu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Vatlieu.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Vatlieu.Location = new System.Drawing.Point(2, 221);
-            this.btn_Vatlieu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Vatlieu.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Vatlieu.Name = "btn_Vatlieu";
             this.btn_Vatlieu.Size = new System.Drawing.Size(178, 49);
             this.btn_Vatlieu.TabIndex = 3;
@@ -99,7 +100,7 @@
             this.btn_Thuoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Thuoc.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Thuoc.Location = new System.Drawing.Point(2, 274);
-            this.btn_Thuoc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Thuoc.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Thuoc.Name = "btn_Thuoc";
             this.btn_Thuoc.Size = new System.Drawing.Size(178, 49);
             this.btn_Thuoc.TabIndex = 4;
@@ -113,8 +114,8 @@
             this.btn_Hoadon.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Hoadon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Hoadon.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_Hoadon.Location = new System.Drawing.Point(2, 433);
-            this.btn_Hoadon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Hoadon.Location = new System.Drawing.Point(2, 486);
+            this.btn_Hoadon.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Hoadon.Name = "btn_Hoadon";
             this.btn_Hoadon.Size = new System.Drawing.Size(178, 49);
             this.btn_Hoadon.TabIndex = 5;
@@ -129,7 +130,7 @@
             this.btn_phieukhambenh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_phieukhambenh.ForeColor = System.Drawing.Color.Transparent;
             this.btn_phieukhambenh.Location = new System.Drawing.Point(2, 327);
-            this.btn_phieukhambenh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_phieukhambenh.Margin = new System.Windows.Forms.Padding(2);
             this.btn_phieukhambenh.Name = "btn_phieukhambenh";
             this.btn_phieukhambenh.Size = new System.Drawing.Size(178, 49);
             this.btn_phieukhambenh.TabIndex = 6;
@@ -143,8 +144,8 @@
             this.btn_Doanhthu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Doanhthu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Doanhthu.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_Doanhthu.Location = new System.Drawing.Point(2, 486);
-            this.btn_Doanhthu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Doanhthu.Location = new System.Drawing.Point(2, 539);
+            this.btn_Doanhthu.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Doanhthu.Name = "btn_Doanhthu";
             this.btn_Doanhthu.Size = new System.Drawing.Size(178, 49);
             this.btn_Doanhthu.TabIndex = 7;
@@ -190,7 +191,7 @@
             this.btn_Taikhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Taikhoan.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Taikhoan.Location = new System.Drawing.Point(2, 62);
-            this.btn_Taikhoan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Taikhoan.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Taikhoan.Name = "btn_Taikhoan";
             this.btn_Taikhoan.Size = new System.Drawing.Size(178, 49);
             this.btn_Taikhoan.TabIndex = 0;
@@ -208,6 +209,7 @@
             this.btn_dschokham.Controls.Add(this.btn_Vatlieu);
             this.btn_dschokham.Controls.Add(this.btn_Thuoc);
             this.btn_dschokham.Controls.Add(this.btn_phieukhambenh);
+            this.btn_dschokham.Controls.Add(this.btn_Dichvu);
             this.btn_dschokham.Controls.Add(this.btn_ds);
             this.btn_dschokham.Controls.Add(this.btn_Hoadon);
             this.btn_dschokham.Controls.Add(this.btn_Doanhthu);
@@ -218,14 +220,29 @@
             this.btn_dschokham.Size = new System.Drawing.Size(182, 657);
             this.btn_dschokham.TabIndex = 1;
             // 
+            // btn_Dichvu
+            // 
+            this.btn_Dichvu.FlatAppearance.BorderSize = 0;
+            this.btn_Dichvu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Dichvu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Dichvu.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_Dichvu.Location = new System.Drawing.Point(2, 380);
+            this.btn_Dichvu.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Dichvu.Name = "btn_Dichvu";
+            this.btn_Dichvu.Size = new System.Drawing.Size(178, 49);
+            this.btn_Dichvu.TabIndex = 10;
+            this.btn_Dichvu.Text = "Dịch vụ";
+            this.btn_Dichvu.UseVisualStyleBackColor = true;
+            this.btn_Dichvu.Click += new System.EventHandler(this.btn_Dichvu_Click);
+            // 
             // btn_ds
             // 
             this.btn_ds.FlatAppearance.BorderSize = 0;
             this.btn_ds.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_ds.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_ds.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_ds.Location = new System.Drawing.Point(2, 380);
-            this.btn_ds.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_ds.Location = new System.Drawing.Point(2, 433);
+            this.btn_ds.Margin = new System.Windows.Forms.Padding(2);
             this.btn_ds.Name = "btn_ds";
             this.btn_ds.Size = new System.Drawing.Size(178, 49);
             this.btn_ds.TabIndex = 8;
@@ -239,8 +256,8 @@
             this.btn_Dangxuat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Dangxuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Dangxuat.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_Dangxuat.Location = new System.Drawing.Point(2, 539);
-            this.btn_Dangxuat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn_Dangxuat.Location = new System.Drawing.Point(2, 592);
+            this.btn_Dangxuat.Margin = new System.Windows.Forms.Padding(2);
             this.btn_Dangxuat.Name = "btn_Dangxuat";
             this.btn_Dangxuat.Size = new System.Drawing.Size(178, 49);
             this.btn_Dangxuat.TabIndex = 9;
@@ -279,5 +296,6 @@
         private System.Windows.Forms.FlowLayoutPanel btn_dschokham;
         private System.Windows.Forms.Button btn_ds;
         private System.Windows.Forms.Button btn_Dangxuat;
+        private System.Windows.Forms.Button btn_Dichvu;
     }
 }

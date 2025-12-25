@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using NhaKhoa.BUS;
 using NhaKhoa.Models;
+using NhaKhoa.UI;
 
 namespace NhaKhoa.Thuoc
 {
@@ -199,6 +200,12 @@ namespace NhaKhoa.Thuoc
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            FormInDanhMuc frmInDanhMuc = new FormInDanhMuc();
+            frmInDanhMuc.Show();
         }
     }
 }

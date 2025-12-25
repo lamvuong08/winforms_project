@@ -13,12 +13,12 @@ namespace NhaKhoa.BUS
             _dal = new ChuanDoanDAL();
         }
 
-        public List<Models.ChuanDoan> LayDanhSach()
+        public List<Models.ChanDoan> LayDanhSach()
         {
             return _dal.GetAll();
         }
 
-        public List<Models.ChuanDoan> LayChuanDoanTheoMaBN(string maBN)
+        public List<Models.ChanDoan> LayChuanDoanTheoMaBN(string maBN)
         {
             if (string.IsNullOrWhiteSpace(maBN))
                 throw new ArgumentException("Mã bệnh nhân không được để trống");
@@ -26,7 +26,7 @@ namespace NhaKhoa.BUS
             return _dal.GetByMaBN(maBN);
         }
 
-        public Models.ChuanDoan LayChuanDoanTheoMa(string maCD)
+        public Models.ChanDoan LayChuanDoanTheoMa(string maCD)
         {
             if (string.IsNullOrWhiteSpace(maCD))
                 throw new ArgumentException("Mã chẩn đoán không được để trống");
@@ -34,33 +34,24 @@ namespace NhaKhoa.BUS
             return _dal.GetById(maCD);
         }
 
-        public void ThemChuanDoan(Models.ChuanDoan cd)
+        public void ThemChuanDoan(Models.ChanDoan cd)
         {
-            if (string.IsNullOrWhiteSpace(cd.NoiDung))
-                throw new ArgumentException("Nội dung chẩn đoán không được để trống");
-
-            if (string.IsNullOrWhiteSpace(cd.MaBN))
-                throw new ArgumentException("Mã bệnh nhân không được để trống");
-
-            if (string.IsNullOrWhiteSpace(cd.MaNV))
-                throw new ArgumentException("Mã nhân viên không được để trống");
+            if (string.IsNullOrWhiteSpace(cd.TenChuanDoan))
+                throw new ArgumentException("Tên chẩn đoán không được để trống");
 
             if (string.IsNullOrWhiteSpace(cd.MaCD))
                 cd.MaCD = _dal.GetNewMaCD();
 
-            if (cd.NgayChuanDoan == default(DateTime))
-                cd.NgayChuanDoan = DateTime.Now;
-
             _dal.Insert(cd);
         }
 
-        public void CapNhatChuanDoan(Models.ChuanDoan cd)
+        public void CapNhatChuanDoan(Models.ChanDoan cd)
         {
             if (string.IsNullOrWhiteSpace(cd.MaCD))
                 throw new ArgumentException("Mã chẩn đoán không được để trống");
 
-            if (string.IsNullOrWhiteSpace(cd.NoiDung))
-                throw new ArgumentException("Nội dung chẩn đoán không được để trống");
+            if (string.IsNullOrWhiteSpace(cd.TenChuanDoan))
+                throw new ArgumentException("Tên chẩn đoán không được để trống");
 
             var existing = _dal.GetById(cd.MaCD);
             if (existing == null)

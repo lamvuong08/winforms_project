@@ -5,6 +5,7 @@ using NhaKhoa.NhanVien;
 using NhaKhoa.NhaSi;
 using NhaKhoa.TaiKhoan;
 using NhaKhoa.Thuoc;
+using NhaKhoa.UI;
 using NhaKhoa.Vatlieu;
 using System;
 using System.Collections.Generic;
@@ -114,6 +115,9 @@ namespace NhaKhoa
 
                 case "Thuoc":
                     formToOpen = new FRM_Thuoc();
+                    break;
+                case "Dichvu":
+                    formToOpen = new FRM_Dichvu();
                     break;
 
                 case "Hoadon":

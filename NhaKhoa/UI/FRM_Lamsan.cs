@@ -53,21 +53,15 @@ namespace NhaKhoa
                 var list = _chuanDoanBus.LayChuanDoanTheoMaBN(_maBN);
                 var dt = new DataTable();
                 dt.Columns.Add("Mã chẩn đoán", typeof(string));
-                dt.Columns.Add("Chẩn đoán", typeof(string));
-                dt.Columns.Add("Ngày khám", typeof(DateTime));
+                dt.Columns.Add("Tên chẩn đoán", typeof(string));
+                dt.Columns.Add("Mã lâm sàng", typeof(string));
 
                 foreach (var cd in list)
                 {
-                    dt.Rows.Add(cd.MaCD, cd.NoiDung, cd.NgayChuanDoan);
+                    dt.Rows.Add(cd.MaCD, cd.TenChuanDoan ?? "", cd.MaLS ?? "");
                 }
 
                 dgvLamSan.DataSource = dt;
-
-                // Định dạng ngày
-                if (dgvLamSan.Columns["Ngày khám"] != null)
-                {
-                    dgvLamSan.Columns["Ngày khám"].DefaultCellStyle.Format = "dd/MM/yyyy HH:mm";
-                }
             }
             catch (Exception ex)
             {
@@ -81,18 +75,17 @@ namespace NhaKhoa
             {
                 if (string.IsNullOrWhiteSpace(txtChanDoan.Text))
                 {
-                    MessageBox.Show("Vui lòng nhập nội dung chẩn đoán!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Vui lòng nhập tên chẩn đoán!", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                var chuanDoan = new Models.ChuanDoan
+                // Lưu ý: ChanDoan chỉ có MaCD, MaLS, TenChuanDoan
+                // Nếu cần liên kết với LamSan thì phải có MaLS
+                var chuanDoan = new Models.ChanDoan
                 {
                     MaCD = "", // BUS sẽ tự sinh
-                    NoiDung = txtChanDoan.Text.Trim(),
-                    NgayChuanDoan = DateTime.Now,
-                    MaBN = _maBN,
-                    MaNV = "NV001", // TODO: Lấy từ user đang đăng nhập
-                    MaTLS = null
+                    TenChuanDoan = txtChanDoan.Text.Trim(),
+                    MaLS = null // Có thể cần tạo LamSan trước và lấy MaLS
                 };
 
                 _chuanDoanBus.ThemChuanDoan(chuanDoan);
@@ -147,7 +140,7 @@ namespace NhaKhoa
 
             foreach (DataGridViewRow row in dgvLamSan.Rows)
             {
-                toaThuoc += $"- {row.Cells["Chẩn đoán"].Value}\n";
+                toaThuoc += $"- {row.Cells["Tên chẩn đoán"].Value}\n";
             }
 
             MessageBox.Show(toaThuoc, "Toa thuốc", MessageBoxButtons.OK, MessageBoxIcon.Information);
