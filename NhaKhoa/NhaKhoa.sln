@@ -1,6 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Visual Studio Version 18
 VisualStudioVersion = 18.0.11222.15 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
@@ -14,6 +15,10 @@ EndProject
 =======
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35327.3
+=======
+# Visual Studio Version 18
+VisualStudioVersion = 18.0.11222.15 d18.0
+>>>>>>> bc808e0 (Update Hoadon and Nhasi forms)
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NhaKhoa", "NhaKhoa\NhaKhoa.csproj", "{925D8365-67E0-48A3-975B-F03C26E89B85}"
 EndProject
