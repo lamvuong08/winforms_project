@@ -1,0 +1,14 @@
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.db
+*.sqlite
+
+# Build
+bin/
+obj/
+
+# Copilot / IntelliSense
+CopilotSnapshots/
+CopilotIndices/
